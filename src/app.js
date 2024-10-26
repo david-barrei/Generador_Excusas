@@ -1,11 +1,29 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff;
+}
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 300px;
+}
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+#excuse {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
