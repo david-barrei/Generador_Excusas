@@ -1,29 +1,18 @@
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f8ff;
+let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+let action = ['ate', 'peed', 'crushed', 'broke'];
+let what = ['my homework', 'my phone', 'the car'];
+let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
+
+
+function generateExcuse() {
+  let randomWho = who[Math.floor(Math.random() * who.length)];
+  let randomAction = action[Math.floor(Math.random() * action.length)];
+  let randomWhat = what[Math.floor(Math.random() * what.length)];
+  let randomWhen = when[Math.floor(Math.random() * when.length)];
+
+  return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
 }
 
-.container {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  width: 300px;
-}
-
-h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-#excuse {
-  font-size: 18px;
-  color: #555;
-  margin-top: 20px;
-}
+window.onload = function() {
+  document.getElementById("excuse").innerHTML = generateExcuse();
+};
